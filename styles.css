@@ -1,0 +1,332 @@
+/* -------------------- */
+/* Reset / Base Styles  */
+/* -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f5f2;
+    color: #222;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* -------------------- */
+  /* Accessibility        */
+  /* -------------------- */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #000;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    z-index: 1000;
+  }
+  
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+  }
+  
+  /* -------------------- */
+  /* Header / Navigation  */
+  /* -------------------- */
+  .site-header {
+    background: linear-gradient(135deg, #2f4156, #567c8d);
+    color: #fff;
+    padding-bottom: 4rem;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus {
+    opacity: 0.8;
+  }
+  
+  /* -------------------- */
+  /* Hero Section         */
+  /* -------------------- */
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 2rem;
+  }
+  
+  .hero-text {
+    max-width: 750px;
+  }
+  
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.85rem;
+    color: #d8e3ea;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+    color: #eef4f7;
+    margin-bottom: 1.75rem;
+    max-width: 680px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.85rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+  }
+  
+  .button:hover,
+  .button:focus {
+    transform: translateY(-2px);
+  }
+  
+  .primary-button {
+    background-color: #ffffff;
+    color: #2f4156;
+  }
+  
+  .secondary-button {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  
+  /* -------------------- */
+  /* Sections             */
+  /* -------------------- */
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+  
+  .alt-section {
+    background-color: #eaf0f3;
+    max-width: 100%;
+    padding-left: max(1.5rem, calc((100% - 1200px) / 2 + 1.5rem));
+    padding-right: max(1.5rem, calc((100% - 1200px) / 2 + 1.5rem));
+  }
+  
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+  
+  .section-label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.85rem;
+    color: #5f6d78;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-heading h2 {
+    font-size: 2rem;
+    color: #1f2d3a;
+  }
+  
+  .section-intro {
+    margin-top: 0.75rem;
+    max-width: 700px;
+    color: #4c5963;
+  }
+  
+  /* -------------------- */
+  /* About Section        */
+  /* -------------------- */
+  .about-content {
+    max-width: 800px;
+    display: grid;
+    gap: 1rem;
+    font-size: 1.05rem;
+  }
+  
+  /* -------------------- */
+  /* Projects Section     */
+  /* -------------------- */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .project-card:hover,
+  .project-card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-course {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #62717c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card h3 {
+    font-size: 1.3rem;
+    color: #213242;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-role {
+    margin-bottom: 0.85rem;
+    color: #3f4d58;
+  }
+  
+  .project-card p {
+    color: #4d5b66;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tags li {
+    background-color: #e5edf1;
+    color: #33414d;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+  
+  .project-link {
+    display: inline-block;
+    font-weight: 700;
+    color: #2f4156;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+  
+  .project-link:hover,
+  .project-link:focus {
+    border-color: #2f4156;
+  }
+  
+  /* -------------------- */
+  /* Contact Section      */
+  /* -------------------- */
+  .contact-text {
+    max-width: 700px;
+    margin-bottom: 1rem;
+    color: #44515b;
+  }
+  
+  .contact-info a {
+    color: #2f4156;
+    font-weight: 700;
+  }
+  
+  /* -------------------- */
+  /* Footer               */
+  /* -------------------- */
+  .site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1f2d3a;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+  
+  /* -------------------- */
+  /* Responsive Design    */
+  /* -------------------- */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.3rem;
+    }
+  
+    .section-heading h2 {
+      font-size: 1.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-description {
+      font-size: 1rem;
+    }
+  
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+  }
